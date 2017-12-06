@@ -1,0 +1,14 @@
+.ui-button-success {
+    margin-bottom: 20px;
+}
+
+.ui-button-success:hover {
+    background-color:#0d3a52 !important;
+    color: #ffffff !important;
+}
+
+.ui-progress-spinner {
+    fill: yellow;
+    stroke-width: 50px;
+}
+
