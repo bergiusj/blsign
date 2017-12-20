@@ -1,7 +1,11 @@
 h1 {
     color: white;
-    font-weight: bold;
+    font-size: 7em;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 10px;
+    
 }
+
 
 h3 {
     font-size: 16px;
@@ -11,9 +15,63 @@ h3 {
 
 .jumbotron {
     padding: 5px;
-    background: #0d3a52;
+    min-height: 200px;
+    background-color:#0d3952;
+    padding-bottom: 20px;
+
 }
 
+.jumbotron p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    margin-bottom: 5px !important;
+    color: white;
+    font-size: 16px;
+}
 
+.jumbotron.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px !important;
+    padding: 15px;
+    margin-bottom: 0px !important;
+}
 
+.footer-info {
+    max-width: 300px;
+    margin: 10px;
+}
 
+.footer-links {
+    max-width: 300px;
+    margin: 10px;
+}
+
+.fa {
+    color: white;
+    padding: 5px;
+    margin-top: 0px !important;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 600px) 
+{
+  .footer-info 
+    {
+       max-width: 100%;
+       margin: 5px;
+       padding: 15px;
+    }
+
+    .footer-links
+    {
+        max-width: 100%;
+        margin: 5px;
+        padding: 15px;
+    }
+}

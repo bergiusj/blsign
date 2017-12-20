@@ -2,11 +2,13 @@
     margin-top: 0px;
     margin-bottom: 0px;
 }
+.plusminus {
 
+}
 .mat-fab {
     color: white;
     margin-bottom: 10px;
-    background-color: #0d3a52;
+    background-color: #0d3952;
 }
 
 .mat-button {

@@ -18,7 +18,9 @@ export class PdfViewerComponent {
 
   incrementPage(amount: number) {
     this.page += amount;
+    window.scrollTo(0, 0);
   }
+
 
 }
 

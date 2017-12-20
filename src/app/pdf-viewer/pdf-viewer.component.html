@@ -1,10 +1,12 @@
 <div class="pdf-viewer">
+        <div class="plusminus">
         <button mat-fab color="primary" (click)="incrementZoom(0.1)">
                 <i class="fa fa-search-plus"></i>
         </button>
         <button mat-fab color="primary" (click)="incrementZoom(-0.1)">
                 <i class="fa fa-search-minus"></i>
         </button><br>
+        </div>
 <pdf-viewer src="https://vadimdez.github.io/ng2-pdf-viewer/pdf-test.pdf"
             [zoom]="zoom"
             [(page)]="page"

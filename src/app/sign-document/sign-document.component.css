@@ -3,7 +3,7 @@
 }
 
 .ui-button-success:hover {
-    background-color:#0d3a52 !important;
+    background-color:rgba(13,58,82,.85) !important;
     color: #ffffff !important;
 }
 
@@ -11,4 +11,3 @@
     fill: yellow;
     stroke-width: 50px;
 }
-
