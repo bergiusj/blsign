@@ -11,3 +11,20 @@
     fill: yellow;
     stroke-width: 50px;
 }
+
+.signbutton {
+    display: block;
+    justify-content: center; 
+    text-align: center;
+    align-content: center;
+    padding-top: 10px;
+}
+
+.bankbutton {
+    display: flex;
+    justify-content: center;
+}
+
+.button-sign {
+    padding-bottom: 10px;
+}

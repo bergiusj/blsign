@@ -24,4 +24,8 @@ export class SignDocumentComponent {
   mobileBankID() {
  }
 
+ // När användaren väljer BankID
+ BankID() {
+ }
+
 }

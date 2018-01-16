@@ -1,17 +1,16 @@
 <p-growl [value]="msgs"></p-growl>
 
 <div class="button-sign">
-<p-toggleButton     [(ngModel)]="isValid"
-                    onLabel="Godkänd"
-                    offLabel="Ej godkänd"
-                    onIcon="fa-check-square" 
-                    offIcon="fa-square">
-</p-toggleButton>
-
-<button type="button" [disabled]="!isValid"
+<button type="button"
                     (click)="confirm()"
-                    pButton icon="fa-check" 
-                    class="ui-button-success" 
+                    pButton icon="fa fa-mobile" 
+                    class="ui-button-primary" 
+                    label="Signera med Mobilt BankID">
+</button>
+<button type="button"
+                    (click)="BankID()"
+                    pButton icon="fa fa-desktop" 
+                    class="ui-button-primary" 
                     label="Signera med BankID">
 </button>
 
@@ -22,15 +21,16 @@
             [responsive]="true"
             [closable]="true"
             [resizable]="false">
-    <p>Här väljer du om du vill signera dokumentet med Mobilt BankID på annan enhet eller BankID på denna enhet</p>
+    <p>Ange ditt personnummer och starta sedan applikationen på din mobila enhet</p>
     <img src="https://www.bankid.com/_themes/bankid-www/img/logo1-default.svg" style="width: 25%;">
         <p-footer>
-                <p-inputMask mask="99999999-9999"
-                placeholder="Pers.nummer(12 siffror)"
-                slotChar="DDDDDDDD-NNNN"
-                required="true"></p-inputMask>
-            <button type="button" pButton icon="" label="Mobilt BankID" (click)="mobileBankID()"></button>
-            <button type="button" pButton icon="" label="BankID"></button>
+            <div class="signbutton">
+            <p-inputMask
+            mask="99999999-9999"
+            placeholder="Pers.nummer(12 siffror)"
+            slotChar="DDDDDDDD-NNNN"
+            required="true"></p-inputMask>
+            <button type="button" class="ui-button-success" pButton icon="" label="Nästa"></button> </div>
         </p-footer>
 </p-dialog>
 </div>
